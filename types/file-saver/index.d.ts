@@ -44,3 +44,7 @@ declare module "file-saver" {
     var fileSaver: { saveAs: typeof saveAs };
     export = fileSaver
 }
+
+interface Window {
+    saveAs: FileSaver;
+}
